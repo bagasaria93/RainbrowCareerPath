@@ -1,0 +1,579 @@
+:root {
+    --salon-pink: #E91E63;
+    --salon-purple: #8E24AA;
+    --salon-rose: #F48FB1;
+    --salon-lavender: #CE93D8;
+    --salon-dark: #4A148C;
+    --salon-light: #FCE4EC;
+}
+
+/* Override Bootstrap Primary Colors */
+.btn-primary, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active {
+    background: linear-gradient(45deg, var(--salon-pink), var(--salon-purple)) !important;
+    border: none !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3) !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--salon-purple), var(--salon-dark)) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(142, 36, 170, 0.4) !important;
+}
+
+.bg-gradient-primary, .sidebar {
+    background: linear-gradient(180deg, var(--salon-dark) 0%, var(--salon-purple) 70%, var(--salon-pink) 100%) !important;
+}
+
+.text-primary {
+    color: var(--salon-pink) !important;
+}
+
+.border-left-primary {
+    border-left: 0.25rem solid var(--salon-pink) !important;
+}
+
+/* Salon DateTime Widget */
+.salon-datetime-widget {
+    background: linear-gradient(135deg, var(--salon-light), white);
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.1);
+    border: 2px solid var(--salon-rose);
+}
+
+.salon-time-display {
+    text-align: center;
+}
+
+.salon-date {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--salon-dark);
+    margin-bottom: 0.2rem;
+}
+
+.salon-time {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--salon-pink), var(--salon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.2rem;
+}
+
+.salon-timezone {
+    font-size: 0.8rem;
+    color: var(--salon-purple);
+    opacity: 0.8;
+}
+
+/* Sidebar Professional */
+.sidebar .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 0.2rem 1rem;
+}
+
+.sidebar .nav-item .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateX(8px);
+    color: white !important;
+}
+
+.sidebar .nav-item.active .nav-link {
+    background: linear-gradient(45deg, var(--salon-rose), white) !important;
+    color: var(--salon-dark) !important;
+    font-weight: 600;
+}
+
+.sidebar .sidebar-brand {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1rem;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+/* Cards Enhancement */
+.card {
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--salon-pink), var(--salon-purple)) !important;
+    color: white !important;
+    border-radius: 12px 12px 0 0 !important;
+    border-bottom: none !important;
+}
+
+/* Table Professional */
+.table thead th {
+    background: linear-gradient(135deg, var(--salon-light), var(--salon-rose)) !important;
+    color: var(--salon-dark) !important;
+    border: none !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.table tbody tr:hover {
+    background: linear-gradient(135deg, var(--salon-light), rgba(252, 228, 236, 0.5)) !important;
+    transform: scale(1.01);
+}
+
+/* Form Controls */
+.form-control:focus {
+    border-color: var(--salon-pink) !important;
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25) !important;
+}
+
+/* Topbar */
+.topbar {
+    background: linear-gradient(135deg, white 0%, var(--salon-light) 100%) !important;
+    border-bottom: 3px solid var(--salon-rose) !important;
+}
+
+/* Badges */
+.badge-primary {
+    background: linear-gradient(45deg, var(--salon-pink), var(--salon-purple)) !important;
+}
+
+/* Dashboard Stats Cards */
+.border-left-info {
+    border-left: 0.25rem solid var(--salon-lavender) !important;
+}
+
+.border-left-warning {
+    border-left: 0.25rem solid #FFB74D !important;
+}
+
+.border-left-success {
+    border-left: 0.25rem solid #66BB6A !important;
+}
+
+.border-left-secondary {
+    border-left: 0.25rem solid var(--salon-rose) !important;
+}
+
+/* Buttons Enhancement */
+.btn {
+    border-radius: 8px !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #FFB74D, #FFA726) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #66BB6A, #4CAF50) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #EF5350, #E53935) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-info {
+    background: linear-gradient(45deg, #29B6F6, #039BE5) !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* Modal */
+.modal-header {
+    background: linear-gradient(135deg, var(--salon-pink), var(--salon-purple)) !important;
+    color: white !important;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(45deg, var(--salon-light), var(--salon-rose));
+    color: var(--salon-dark);
+}
+
+/* Animation */
+@keyframes salonPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.salon-time {
+    animation: salonPulse 2s infinite;
+}
+
+:root {
+    --salon-pink: #E91E63;
+    --salon-purple: #8E24AA;
+    --salon-rose: #F48FB1;
+    --salon-lavender: #CE93D8;
+    --salon-dark: #4A148C;
+    --salon-light: #FCE4EC;
+}
+
+/* Override Bootstrap Primary Colors */
+.btn-primary, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active {
+    background: linear-gradient(45deg, var(--salon-pink), var(--salon-purple)) !important;
+    border: none !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3) !important;
+}
+
+.bg-gradient-primary, .sidebar {
+    background: linear-gradient(180deg, var(--salon-dark) 0%, var(--salon-purple) 70%, var(--salon-pink) 100%) !important;
+}
+
+.text-primary {
+    color: var(--salon-pink) !important;
+}
+
+.border-left-primary {
+    border-left: 0.25rem solid var(--salon-pink) !important;
+}
+
+/* Text Color Fixes */
+.text-gray-800, h1, h2, h3, h4, h5, h6 {
+    color: #2d3748 !important;
+}
+
+.card-body, .table tbody td {
+    color: #2d3748 !important;
+}
+
+.form-control {
+    color: #2d3748 !important;
+    background-color: white !important;
+}
+
+.dropdown-item {
+    color: #2d3748 !important;
+}
+
+.nav-link {
+    color: #2d3748 !important;
+}
+
+/* Salon DateTime Widget */
+.salon-datetime-widget {
+    background: linear-gradient(135deg, var(--salon-light), white);
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.1);
+    border: 2px solid var(--salon-rose);
+}
+
+.salon-time-display {
+    text-align: center;
+}
+
+.salon-date {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--salon-dark);
+    margin-bottom: 0.2rem;
+}
+
+.salon-time {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--salon-pink), var(--salon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.2rem;
+}
+
+.salon-timezone {
+    font-size: 0.8rem;
+    color: var(--salon-purple);
+    opacity: 0.8;
+}
+
+/* Sidebar Professional */
+.sidebar .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 8px;
+    margin: 0.2rem 1rem;
+}
+
+.sidebar .nav-item.active .nav-link {
+    background: linear-gradient(45deg, var(--salon-rose), white) !important;
+    color: var(--salon-dark) !important;
+    font-weight: 600;
+}
+
+.sidebar .sidebar-brand {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1rem;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+/* Cards Enhancement */
+.card {
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--salon-pink), var(--salon-purple)) !important;
+    color: white !important;
+    border-radius: 12px 12px 0 0 !important;
+    border-bottom: none !important;
+}
+
+/* Table Professional */
+.table thead th {
+    background: linear-gradient(135deg, var(--salon-light), var(--salon-rose)) !important;
+    color: var(--salon-dark) !important;
+    border: none !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+/* Form Controls */
+.form-control:focus {
+    border-color: var(--salon-pink) !important;
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25) !important;
+}
+
+/* Topbar */
+.topbar {
+    background: linear-gradient(135deg, white 0%, var(--salon-light) 100%) !important;
+    border-bottom: 3px solid var(--salon-rose) !important;
+}
+
+/* Badges */
+.badge-primary {
+    background: linear-gradient(45deg, var(--salon-pink), var(--salon-purple)) !important;
+}
+
+/* Dashboard Stats Cards */
+.border-left-info {
+    border-left: 0.25rem solid var(--salon-lavender) !important;
+}
+
+.border-left-warning {
+    border-left: 0.25rem solid #FFB74D !important;
+}
+
+.border-left-success {
+    border-left: 0.25rem solid #66BB6A !important;
+}
+
+.border-left-secondary {
+    border-left: 0.25rem solid var(--salon-rose) !important;
+}
+
+/* Buttons Enhancement */
+.btn {
+    border-radius: 8px !important;
+    font-weight: 500;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #FFB74D, #FFA726) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #66BB6A, #4CAF50) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #EF5350, #E53935) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-info {
+    background: linear-gradient(45deg, #29B6F6, #039BE5) !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* Modal */
+.modal-header {
+    background: linear-gradient(135deg, var(--salon-pink), var(--salon-purple)) !important;
+    color: white !important;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Print Styles Fixed */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+        font-family: Arial, sans-serif !important;
+        line-height: 1.3 !important;
+    }
+
+    .no-print, .filter-section, .btn, .sidebar, .topbar {
+        display: none !important;
+    }
+
+    .container-fluid {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .card {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+        page-break-inside: avoid;
+    }
+
+    .card-header {
+        background: white !important;
+        color: black !important;
+        text-align: center !important;
+        border-bottom: 2px solid black !important;
+        padding: 15px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .card-body {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .table-responsive {
+        overflow: visible !important;
+    }
+
+    .table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        margin: 0 !important;
+        font-size: 10px !important;
+    }
+
+    .table th, .table td {
+        border: 1px solid black !important;
+        padding: 4px !important;
+        color: black !important;
+        background: white !important;
+        word-wrap: break-word !important;
+    }
+
+    .table thead th {
+        background: #f0f0f0 !important;
+        color: black !important;
+        font-weight: bold !important;
+        text-align: center !important;
+    }
+
+    .table tfoot th {
+        background: #e0e0e0 !important;
+        color: black !important;
+        text-align: center !important;
+        font-weight: bold !important;
+    }
+
+    .badge {
+        border: 1px solid black !important;
+        background: white !important;
+        color: black !important;
+        padding: 1px 3px !important;
+        font-size: 8px !important;
+        display: inline !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: black !important;
+        margin: 10px 0 !important;
+    }
+
+    p {
+        color: black !important;
+        margin: 5px 0 !important;
+    }
+}
+
+/* Remove ALL hover animations */
+*, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+.btn:hover, .card:hover, .table tbody tr:hover, .nav-link:hover, .dropdown-item:hover {
+    transform: none !important;
+    transition: none !important;
+}
+
+/* Text Primary to White */
+.text-primary, .m-0.font-weight-bold.text-primary {
+    color: lightgray !important;
+}
+
+/* Print font size fix */
+@media print {
+    .table {
+        font-size: 12px !important;
+    }
+    
+    .table th, .table td {
+        padding: 6px !important;
+        font-size: 12px !important;
+    }
+}
